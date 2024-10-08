@@ -1,3 +1,3 @@
 # E-plant shopping portal using React
 
-<img width="932" alt="image" src="https://github.com/user-attachments/assets/3b97e012-d78d-4ca7-a74a-f366e7851f1f">
+<img width="934" alt="image" src="https://github.com/user-attachments/assets/e064e5e8-c386-4831-acff-ec58fe694c00">
