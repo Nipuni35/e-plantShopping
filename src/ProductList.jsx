@@ -318,7 +318,7 @@ function ProductList() {
           </div>
           <div
             onClick={(e) => handleCartClick(e)}
-            style={{ position: "relative" }}
+            style={{ position: "relative", cursor: "pointer" }}
           >
             <div
               style={{

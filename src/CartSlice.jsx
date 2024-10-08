@@ -19,7 +19,7 @@ export const CartSlice = createSlice({
           plant.counter +=1;
           break;
         case "DECREMENT":
-          if (plant.counter > 0) {
+          if (plant.counter > 1) {
             plant.counter -=1;
           }
           break;
