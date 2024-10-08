@@ -10,19 +10,18 @@ export const CartSlice = createSlice({
       state.items.push(action.payload);
     },
     removeItem: (state, action) => {
-      const index = state.items.indexOf(action.payload.name);
-      if (index > -1) {
-        state.items.splice(index, 1); 
-      }
+      state.items = state.items.filter(item => item.name !== action.payload.name);
     },
     updateQuantity: (state, action) => {
-      const plant = state.items.find(action.payload.name);
+      const plant = state.items.find(item => item.name === action.payload.name);
       switch (action.payload.actionType) {
         case "INCREMENT":
           plant.counter +=1;
           break;
         case "DECREMENT":
-          plant.counter -=1;
+          if (plant.counter > 0) {
+            plant.counter -=1;
+          }
           break;
       } 
     },

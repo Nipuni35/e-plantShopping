@@ -14,7 +14,8 @@ const Card = ({ plant }) => {
     setDisableButton(true); 
     let payload = {
         ...plant,
-        counter : 1
+        counter : 1,
+        actionType: ""
     }
     dispatch(addItem(payload));
   };
